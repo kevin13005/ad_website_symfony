@@ -1,0 +1,81 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Profil de {{ app.user.firstname }} {{ app.user.name }}{% endblock %}
+
+{% block body %}
+<div class="row">
+    {% for message in app.flashes('message') %}
+    <div class="col-12 text-center">
+        <div class="alert alert-success" role="alert">
+            {{message }}
+          </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="row index">
+    <div class="col-12 text-center">
+        <h1>Profil de {{ app.user.firstname }} {{ app.user.name }}</h1>
+    </div>
+</div>
+<div class="row index">
+    <div class="col-6 bg-warning">
+        Nom
+    </div>
+    <div class="col-6 bg-danger">
+        {{ app.user.name }}
+    </div>
+</div>
+<div class="row index">
+    <div class="col-6 bg-warning">
+        Prenom
+    </div>
+    <div class="col-6 bg-danger">
+        {{ app.user.firstname }}
+    </div>
+</div>
+<div class="row index">
+    <div class="col-6 bg-warning">
+        Email
+    </div>
+    <div class="col-6 bg-danger">
+        {{ app.user.email }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 text-center">
+        <a href="{{ path('users_profil_modifier') }}" class="btn btn-primary">Modifier le profil</a>
+        <a href="{{ path('users_pass_modifier') }}" class="btn btn-primary">Modifier le mot de passe</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 text-center">
+        <h1>Annonces de {{ app.user.firstname }} {{ app.user.name }} ({{ app.user.annonces|length }})</h1>
+    </div>
+</div>
+
+<div class="row">
+    {% for annonce in app.user.annonces %}
+    <div class="col-6 bg-warning">
+        Titre
+    </div>
+    <div class="col-6 bg-danger">
+        {{ annonce.title }}
+    </div>
+    {% endfor %}
+</div>
+
+    <!--<div class="col-6 bg-danger">
+        
+    </div>
+    <div class="col-6 bg-warning">
+        
+    </div>
+    <div class="col-6 bg-warning">
+        
+    </div>
+    <div class="col-6 bg-danger">
+        
+    </div>
+</div>-->
+
+{% endblock %}

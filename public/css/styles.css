@@ -1,0 +1,38 @@
+body{
+    height: 756px;
+}
+.container-fluid{
+    margin:0;
+    padding:0;
+}
+.haut{
+    margin:0;
+    padding:0;
+}
+.haut-part{
+    margin:0;
+    padding:0;
+}
+.milieu{
+    height: 600px;
+}
+.bas{
+    height: 100px
+}
+.logo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.liste{
+    list-style: none;
+    text-align: justify;
+    padding-left: 2px;
+    font-size: 25px;
+}
+.article_liste{
+    background-color: aqua;
+    border: white;
+}
+.index{
+    height: 50px
+}
