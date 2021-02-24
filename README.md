@@ -12,7 +12,7 @@ Elements of the project :
 
 RUN IN LOCAL :
 
-- git clone https://github.com/kevin13005/ad_website_symfony.git
+- tap on terminal --> git clone https://github.com/kevin13005/ad_website_symfony.git
 - in terminal --> php -S 127.0.0.1:8000 -t public
 - go to navigator
 - localhost:8000 for home page
