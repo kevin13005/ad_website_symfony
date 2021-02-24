@@ -1,11 +1,11 @@
 TUTORIAL :
 
-This project show how to
-- create an user entity with make:user
-- authentificate it on a secure way with make:auth
-- registrate user and send a confirmation email with make:registration-form
-- give possibility to user to reset his password with make:reset-password
-- add category to database by creating a form with make:form
+Elements of the project :
+- Create an user entity with make:user
+- Authentificate it on a secure way with make:auth
+- Registrate user and send a confirmation email with make:registration-form
+- Give possibility to user to reset his password with make:reset-password
+- Add category to database by creating a form with make:form
 - Enable users getting changes on their content's style who is published with ckeditor bundle
 - Enable user to change his profile editing his name or firstname or password
 
