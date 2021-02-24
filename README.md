@@ -23,9 +23,9 @@ RUN IN LOCAL :
 
 INSTALL PACKAGES :
 
-composer require symfonycasts/verify-email-bundle 
-composer require symfonycasts/reset-password-bundle
-composer require antishov/doctrine-extensions-bundle
-composer require friendsofsymfony/ckeditor-bundle   
-symfony console ckeditor:install 
-assets:install public 
+- composer require symfonycasts/verify-email-bundle 
+- composer require symfonycasts/reset-password-bundle
+- composer require antishov/doctrine-extensions-bundle
+- composer require friendsofsymfony/ckeditor-bundle   
+- symfony console ckeditor:install 
+- assets:install public 
